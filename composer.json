@@ -1,0 +1,42 @@
+{
+    "name": "forwardcode/forwarcode-middlewares",
+    "description": "Middleware Package",
+    "keywords": [
+        "forwardcode",
+        "forwarcode-middlewares"
+    ],
+    "homepage": "https://github.com/forwardcode/forwarcode-middlewares",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Saif Ali",
+            "email": "saif@forwardcode.in",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Forwardcode\\ForwarcodeMiddlewares\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Forwardcode\\ForwarcodeMiddlewares\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
